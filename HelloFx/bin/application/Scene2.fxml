@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" style="-fx-background-color: #272727;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="125.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5d5d" height="94.0" layoutX="3.0" layoutY="182.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
+      <Text layoutX="148.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE">
+         <font>
+            <Font name="MS Gothic" size="62.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8315789699554443" green="0.08931773900985718" blue="0.08931773900985718" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="currscore" fill="#faf5f5" layoutX="214.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" wrappingWidth="22.13671875">
+         <font>
+            <Font name="MS Gothic" size="62.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5d5d" height="94.0" layoutX="4.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
+      <Text layoutX="41.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIGHEST SCORE">
+         <font>
+            <Font name="MS Gothic" size="60.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3918245732784271" green="0.410526305437088" blue="0.03649122640490532" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="#ece8e8" layoutX="214.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" wrappingWidth="22.13671875">
+         <font>
+            <Font name="MS Gothic" size="62.0" />
+         </font>
+      </Text>
+      <Button fx:id="Home" layoutX="191.0" layoutY="614.0" mnemonicParsing="false" onAction="#switchto" style="-fx-background-color: #5d5d5d;" text="HOME">
+         <font>
+            <Font name="MS Gothic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
